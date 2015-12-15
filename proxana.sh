@@ -64,6 +64,22 @@ get_graph "electricite" "1" $DATE_FROM_7D $DATE_TO "electricite-Instant-7D.png" 
 get_graph "electricite" "2" $DATE_FROM_7D $DATE_TO "electricite-Cumul-7D.png" "700" "250"
 get_graph "electricite" "5" $DATE_FROM_12M $DATE_TO "electricite-Cumul-365D.png" "700" "250"
 
+#Hygrometrie
+get_graph "hygrometrie" "1" $DATE_FROM_24H $DATE_TO "hygrometrie-Temperature.png" "300" "250"
+get_graph "hygrometrie" "2" $DATE_FROM_24H $DATE_TO "hygrometrie-Instant.png" "300" "250"
+
+get_graph "hygrometrie" "3" $DATE_FROM_24H $DATE_TO "hygrometrie-24H.png" "700" "250"
+get_graph "hygrometrie" "4" $DATE_FROM_30D $DATE_TO "hygrometrie-30D.png" "700" "250"
+get_graph "hygrometrie" "5" $DATE_FROM_12M $DATE_TO "hygrometrie-365D.png" "700" "250"
+
+#Traffic
+get_graph "traffic-internet" "3" $DATE_FROM_24H $DATE_TO "traffic-cerbere-eth0-rx.png" "300" "100"
+get_graph "traffic-internet" "4" $DATE_FROM_24H $DATE_TO "traffic-cerbere-eth0-tx.png" "300" "100"
+get_graph "traffic-internet" "5" $DATE_FROM_24H $DATE_TO "traffic-cerbere-pppoe-rx.png" "300" "100"
+get_graph "traffic-internet" "6" $DATE_FROM_24H $DATE_TO "traffic-cerbere-pppoe-tx.png" "300" "100"
 get_graph "traffic-internet" "1" $DATE_FROM_1H $DATE_TO "traffic-cerbere-eth0.png" "700" "250"
 get_graph "traffic-internet" "2" $DATE_FROM_1H $DATE_TO "traffic-cerbere-pppoe.png" "700" "250"
+
+get_graph "traffic-internet" "7" $DATE_FROM_24H $DATE_TO "traffic-d2r2-eth0-rx.png" "300" "100"
+get_graph "traffic-internet" "8" $DATE_FROM_24H $DATE_TO "traffic-d2r2-eth0-tx.png" "300" "100"
 get_graph "traffic-internet" "9" $DATE_FROM_1H $DATE_TO "traffic-d2r2-eth0.png" "700" "250"
