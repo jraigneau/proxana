@@ -51,35 +51,55 @@ get_graph "temperature" "7" $DATE_FROM_24H $DATE_TO "temperature-Datacenter.png"
 get_graph "temperature" "13" $DATE_FROM_24H $DATE_TO "temperature-Cuisine.png" "300" "250"
 get_graph "temperature" "14" $DATE_FROM_24H $DATE_TO "temperature-Douche.png" "300" "250"
 
-get_graph "temperature" "8" $DATE_FROM_24H $DATE_TO "temperature-24H.png" "700" "250"
-get_graph "temperature" "15" $DATE_FROM_30D $DATE_TO "temperature-30D.png" "700" "250"
-get_graph "temperature" "16" $DATE_FROM_12M $DATE_TO "temperature-12M.png" "700" "250"
-get_graph "temperature" "11" $DATE_FROM_7D $DATE_TO "temperature-datacenter-7D.png" "700" "250"
+get_graph "temperature" "8" $DATE_FROM_24H $DATE_TO "temperature-24H.png" "750" "250"
+get_graph "temperature" "15" $DATE_FROM_30D $DATE_TO "temperature-30D.png" "750" "250"
+get_graph "temperature" "16" $DATE_FROM_12M $DATE_TO "temperature-12M.png" "750" "250"
+get_graph "temperature" "11" $DATE_FROM_7D $DATE_TO "temperature-datacenter-7D.png" "750" "250"
 
 #Electricite
 get_graph "electricite" "3" $DATE_FROM_24H $DATE_TO "electricite-Instant.png" "400" "250"
 get_graph "electricite" "4" $DATE_FROM_24H $DATE_TO "electricite-Cumul.png" "400" "250"
 
-get_graph "electricite" "1" $DATE_FROM_7D $DATE_TO "electricite-Instant-7D.png" "700" "250"
-get_graph "electricite" "2" $DATE_FROM_7D $DATE_TO "electricite-Cumul-7D.png" "700" "250"
-get_graph "electricite" "5" $DATE_FROM_12M $DATE_TO "electricite-Cumul-365D.png" "700" "250"
+get_graph "electricite" "1" $DATE_FROM_7D $DATE_TO "electricite-Instant-7D.png" "750" "250"
+get_graph "electricite" "2" $DATE_FROM_7D $DATE_TO "electricite-Cumul-7D.png" "750" "250"
+get_graph "electricite" "5" $DATE_FROM_12M $DATE_TO "electricite-Cumul-365D.png" "750" "250"
 
 #Hygrometrie
-get_graph "hygrometrie" "1" $DATE_FROM_24H $DATE_TO "hygrometrie-Temperature.png" "300" "250"
-get_graph "hygrometrie" "2" $DATE_FROM_24H $DATE_TO "hygrometrie-Instant.png" "300" "250"
+get_graph "hygrometrie" "1" $DATE_FROM_24H $DATE_TO "hygrometrie-Temperature.png" "300" "220"
+get_graph "hygrometrie" "2" $DATE_FROM_24H $DATE_TO "hygrometrie-Instant.png" "300" "220"
 
-get_graph "hygrometrie" "3" $DATE_FROM_24H $DATE_TO "hygrometrie-24H.png" "700" "250"
-get_graph "hygrometrie" "4" $DATE_FROM_30D $DATE_TO "hygrometrie-30D.png" "700" "250"
-get_graph "hygrometrie" "5" $DATE_FROM_12M $DATE_TO "hygrometrie-365D.png" "700" "250"
+get_graph "hygrometrie" "3" $DATE_FROM_24H $DATE_TO "hygrometrie-24H.png" "750" "250"
+get_graph "hygrometrie" "4" $DATE_FROM_30D $DATE_TO "hygrometrie-30D.png" "750" "250"
+get_graph "hygrometrie" "5" $DATE_FROM_12M $DATE_TO "hygrometrie-365D.png" "750" "250"
 
 #Traffic
 get_graph "traffic-internet" "3" $DATE_FROM_24H $DATE_TO "traffic-cerbere-eth0-rx.png" "300" "100"
 get_graph "traffic-internet" "4" $DATE_FROM_24H $DATE_TO "traffic-cerbere-eth0-tx.png" "300" "100"
 get_graph "traffic-internet" "5" $DATE_FROM_24H $DATE_TO "traffic-cerbere-pppoe-rx.png" "300" "100"
 get_graph "traffic-internet" "6" $DATE_FROM_24H $DATE_TO "traffic-cerbere-pppoe-tx.png" "300" "100"
-get_graph "traffic-internet" "1" $DATE_FROM_1H $DATE_TO "traffic-cerbere-eth0.png" "700" "250"
-get_graph "traffic-internet" "2" $DATE_FROM_1H $DATE_TO "traffic-cerbere-pppoe.png" "700" "250"
+get_graph "traffic-internet" "1" $DATE_FROM_1H $DATE_TO "traffic-cerbere-eth0.png" "750" "250"
+get_graph "traffic-internet" "2" $DATE_FROM_1H $DATE_TO "traffic-cerbere-pppoe.png" "750" "250"
 
 get_graph "traffic-internet" "7" $DATE_FROM_24H $DATE_TO "traffic-d2r2-eth0-rx.png" "300" "100"
 get_graph "traffic-internet" "8" $DATE_FROM_24H $DATE_TO "traffic-d2r2-eth0-tx.png" "300" "100"
-get_graph "traffic-internet" "9" $DATE_FROM_1H $DATE_TO "traffic-d2r2-eth0.png" "700" "250"
+get_graph "traffic-internet" "9" $DATE_FROM_1H $DATE_TO "traffic-d2r2-eth0.png" "750" "250"
+
+#SUpervision
+get_graph "metriques-serveurs" "1" $DATE_FROM_24H $DATE_TO "supervision-d2r2-load.png" "300" "220"
+get_graph "metriques-serveurs" "2" $DATE_FROM_24H $DATE_TO "supervision-d2r2-mem.png" "300" "220"
+get_graph "metriques-serveurs" "3" $DATE_FROM_24H $DATE_TO "supervision-d2r2-swap.png" "300" "220"
+get_graph "metriques-serveurs" "4" $DATE_FROM_24H $DATE_TO "supervision-d2r2-disk.png" "300" "220"
+get_graph "metriques-serveurs" "9" $DATE_FROM_1H $DATE_TO "supervision-d2r2-loadvsmem1H.png" "750" "250"
+get_graph "metriques-serveurs" "10" $DATE_FROM_7D $DATE_TO "supervision-d2r2-disk7D.png" "750" "250"
+
+get_graph "metriques-serveurs" "5" $DATE_FROM_24H $DATE_TO "supervision-cerbere-load.png" "300" "220"
+get_graph "metriques-serveurs" "6" $DATE_FROM_24H $DATE_TO "supervision-cerbere-mem.png" "300" "220"
+get_graph "metriques-serveurs" "8" $DATE_FROM_24H $DATE_TO "supervision-cerbere-disk.png" "300" "220"
+get_graph "metriques-serveurs" "16" $DATE_FROM_1H $DATE_TO "supervision-cerbere-loadvsmem1H.png" "750" "250"
+get_graph "metriques-serveurs" "12" $DATE_FROM_7D $DATE_TO "supervision-cerbere-disk7D.png" "750" "250"
+
+get_graph "metriques-serveurs" "13" $DATE_FROM_24H $DATE_TO "supervision-raspbmc-load.png" "300" "220"
+get_graph "metriques-serveurs" "14" $DATE_FROM_24H $DATE_TO "supervision-raspbmc-mem.png" "300" "220"
+get_graph "metriques-serveurs" "15" $DATE_FROM_24H $DATE_TO "supervision-raspbmc-disk.png" "300" "220"
+get_graph "metriques-serveurs" "16" $DATE_FROM_1H $DATE_TO "supervision-raspbmc-loadvsmem1H.png" "750" "250"
+get_graph "metriques-serveurs" "17" $DATE_FROM_7D $DATE_TO "supervision-raspbmc-disk7D.png" "750" "250"
