@@ -3,6 +3,9 @@
 COOKIEJAR=$(mktemp)
 trap 'unlink ${COOKIEJAR}' EXIT
 
+#Get script dir
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 #Setup Grafana
 function setup_grafana_session {
   if ! curl -H 'Content-Type: application/json;charset=UTF-8' \
@@ -20,7 +23,7 @@ function get_graph {
     ID=$2
     DATE_FROM=$3
     DATE_TO=$4
-    FILE="dashboard/graphs/$5"
+    FILE="$DIR/dashboard/graphs/$5"
     WIDTH=$6
     HEIGHT=$7
     echo "Creating graph for $FILE"
